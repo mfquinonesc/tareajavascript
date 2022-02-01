@@ -295,9 +295,9 @@ function hidesubCtrl() {
 
 
 function showorder() {
-    let message1 = "";
-    let message2 = "";
-    let message3 = "";
+    let message1 = " ";
+    let message2 = " ";
+    let message3 = " ";
     switch (tamaño) {
         case 1:
             message1 = "pizza personal";
@@ -339,75 +339,44 @@ function showorder() {
             message2 = "";
             break;
     }
-
-    switch (adicion) {
-        case 1:
-            message3 = "con queso";
-            break;
-        case 2:
-            message3 = "con salsa";
-            break;
-        case 3:
-            message3 = "con borde de bocadillo";
-            break;
-        case 4:
-            message3 = "sin queso";
-            break;
-        case 5:
-            message3 = "sin piña";
-            break;
-        case 6:
-            message3 = "sin jamon";
-            break;
-        case 7:
-            message3 = "con salami";
-            break;
-        case 8:
-            message3 = "sin salami";
-            break;
-        case 9:
-            message3 = "con cabano";
-            break;
-        case 10:
-            message3 = "con queso";
-            break;
-        case 11:
-            message3 = "con nachos";
-            break;
-        case 12:
-            message3 = "sin nachos";
-            break;
-        case 13:
-            message3 = "extra guacamole";
-            break;
-        case 14:
-            message3 = "con maíz";
-            break;
-        case 15:
-            message3 = "sin maíz";
-            break;
-        case 16:
-            message3 = "extra carne molida";
-            break;
-        case 17:
-            message3 = "con queso";
-            break;
-        case 18:
-            message3 = "con queso";
-            break;
-        case 19:
-            message3 = "sin queso";
-            break;
-        case 20:
-            message3 = "adicion de salchicha";
-            break;
-        case 21:
-            message3 = "adicion de champiñones";
-            break;
-        default:
-            message3 = "";
-            break;
-    }    
+    if(adicion == 1 || adicion ==10 ||adicion==17 || adicion==18){
+        message3 = "con queso";
+    }else if(adicion == 2){
+        message3 = "con salsa";
+    }else if(adicion == 3){
+        message3 = "con borde de bocadillo";
+    }else if(adicion == 4 || adicion ==19){
+        message3 = "sin queso";
+    }else if(adicion == 5){
+        message3 = "sin piña";
+    }else if(adicion == 6){
+        message3 = "sin jamon";
+    }else if(adicion == 7){
+        message3 = "con salami";
+    }else if(adicion == 8){
+        message3 = "sin salami";
+    }else if(adicion == 9){
+        message3 = "con cabano";
+    }else if(adicion == 11){
+        message3 = "con nachos";
+    }else if(adicion == 12){
+        message3 = "sin nachos";
+    }else if(adicion == 13){
+        message3 = "extra guacamole";
+    }else if(adicion == 14){
+        message3 = "con maíz";
+    }else if(adicion == 15){
+        message3 = "sin maíz";
+    }else if(adicion == 16){
+        message3 = "extra carne molida";
+    }else if(adicion == 20){
+        message3 = "adicion de salchicha";
+    }else if(adicion == 21){
+        message3 = "adicion de champiñones";
+    }else{
+        message3 = " ";
+    }
+    
     showInfo(message1,message2,message3);
 }
 
@@ -420,3 +389,5 @@ function erase() {
     tipo = 0;
     adicion = 0;
 }
+
+
