@@ -237,9 +237,6 @@ bt102.onclick = function () {
 }
 
  
-
-
-
 cancel1.onclick = function () {
     showorder();
     hideCtrl2();
@@ -339,6 +336,7 @@ function showorder() {
             message2 = "";
             break;
     }
+    
     if(adicion == 1 || adicion ==10 ||adicion==17 || adicion==18){
         message3 = "con queso";
     }else if(adicion == 2){
