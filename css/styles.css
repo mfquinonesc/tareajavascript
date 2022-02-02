@@ -70,3 +70,9 @@
 a{
   text-decoration: none;
 }
+.p-8{
+  text-align: justify;
+}
+.space{
+  margin: 1vw 0;
+}

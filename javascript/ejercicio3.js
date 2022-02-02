@@ -52,6 +52,18 @@ let bt92 = document.getElementById("bt92");
 let bt101 = document.getElementById("bt101");
 let bt102 = document.getElementById("bt102");
 
+let acep1 = document.getElementById("acep1");
+let acep2 = document.getElementById("acep2");
+
+acep1.onclick = function(){
+    showorder();
+};
+
+acep2.onclick = function(){
+    showorder();
+};
+
+
 bt1.onclick = function () {
     showorder();
     hideCtrl2();

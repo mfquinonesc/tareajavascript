@@ -18,27 +18,75 @@
 <body>
 
     <div class="container-fluid p-5 bg-primary text-white text-center">
-        <h1>Taller JavaScript</h1>
-        <p>Manuel Quiñones </p>
+        <h1>8. Ejercicio de Switch</h1>
+        <p class="p-8">Hacer un programa donde al usuario si ingresa un día de la semana le indique que día es, si hace
+            parte de la semana o del fin de semana, según las actividades que ingrese. <br>
+            Es decir: <br>
+            Ingresar los días de la semana, y que el usuario tenga un control de sus días ingresando en cada día las
+            actividades importantes y que al final me muestre las actividades que hay en cada día si pertenecen a la
+            semana o al fin de semana
+        </p>
     </div>
 
     <div class="container mt-5">
         <div class="row">
-            <h3 class="text-success"><a href="./index1.html" target="blank_">Ejercicio 1</a></h3>
-            <h3 class="text-success"><a href="./index2.html" target="blank_">Ejercicio 2</a></h3>
-            <h3 class="text-success"><a href="./index3.html" target="blank_">Ejercicio 3</a></h3>
-            <h3 class="text-success"><a href="./index4.html" target="blank_">Ejercicio 4</a></h3>
-            <h3 class="text-success"><a href="./index5.html" target="blank_">Ejercicio 5</a></h3>
-            <h3 class="text-success"><a href="./index6.html" target="blank_">Ejercicio 6</a></h3>
-            <h3 class="text-success"><a href="./index7.html" target="blank_">Ejercicio 7</a></h3>
-           
-           
+            <div class="col-sm-4">
+                <select id="select" class="form-select" aria-label="Default select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">Lunes</option>
+                    <option value="2">Martes</option>
+                    <option value="3">Miercoles</option>
+                    <option value="4">Jueves</option>
+                    <option value="5">Viernes</option>
+                    <option value="6">Sabado</option>
+                    <option value="7">Domingo</option>
 
-
+                </select>
+            </div>
+            <div class="col-sm-4">
+                <div class="input-group">
+                    <span class="input-group-text">Escriba sus tareas</span>
+                    <textarea id="texta" class="form-control" aria-label="With textarea"></textarea>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <button id="btgd" type="button" class="btn btn-primary">Guardar</button>
+            </div>
         </div>
+
+        <div class="row">
+            <div class="space"></div>
+            <div>
+                <button id="btmt" type="button" class="btn btn-primary">Mostrar</button>
+            </div>
+            <div class="space"></div>
+        </div>
+
+        <div class="row">
+            <div class="bg-warning col-sm-4">
+                <h3 class="text-dark">Entre semana</h3>
+            </div>           
+            <div class="col-sm-8 bg-light">
+                <ul id="ul1">
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="bg-danger col-sm-4">
+                <h3  class="text-light">Fin de semana</h3>
+            </div>         
+            <div class="col-sm-8 bg-light">
+                <ul id="ul2">
+
+                </ul>
+            </div>
+        </div>       
+
     </div>
 
-   
+    <script src="./javascript/ejercicio8.js"></script>
 </body>
 
 </html>
