@@ -40,7 +40,7 @@ btn.onclick = function () {
 
 
 function llenarEdad() {
-    let l = 100;
+    let l = 150;
     for (let i = 1; i < l; i++) {
         let selector = document.createElement("option");
         selector.value = i + 0;
