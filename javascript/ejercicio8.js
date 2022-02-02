@@ -12,6 +12,7 @@ let btmt = document.getElementById("btmt");
 btmt.onclick = function(){
     let l =  entre.length;  
     let content = document.getElementById("ul1");
+    content.innerHTML="";
     for (let i =0; i<l; i++){
         let li =  document.createElement("li");
         li.innerText=entre[i];
@@ -20,6 +21,7 @@ btmt.onclick = function(){
 
     l = fin.length;  
     content = document.getElementById("ul2");
+    content.innerHTML="";
     for (let i =0; i<l; i++){
         let li =  document.createElement("li");
         li.innerText=fin[i];
